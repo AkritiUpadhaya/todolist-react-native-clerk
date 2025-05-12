@@ -6,7 +6,7 @@ const publishableKey= process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY
 
 export function InitialLayout() {
   return (
-    <Stack screenOptions={{contentStyle:{backgroundColor:'#e5e5e5'}}}>
+    <Stack screenOptions={{contentStyle:{backgroundColor:'white'}}}>
       <Stack.Screen name="index" options={{ headerShown: false }} />
     </Stack>
   )
