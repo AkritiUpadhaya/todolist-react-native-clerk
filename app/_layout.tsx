@@ -4,9 +4,11 @@ import { Stack } from 'expo-router';
 import React from 'react';
 const publishableKey= process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY
 
-export default function InitialLayout() {
+export function InitialLayout() {
   return (
-    <Stack/>
+    <Stack screenOptions={{contentStyle:{backgroundColor:'#e5e5e5'}}}>
+      <Stack.Screen name="index" options={{ headerShown: false }} />
+    </Stack>
   )
 }
 const Rootlayout = () => {
@@ -21,3 +23,4 @@ const Rootlayout = () => {
         </ClerkProvider>
     )
 }
+export default Rootlayout
