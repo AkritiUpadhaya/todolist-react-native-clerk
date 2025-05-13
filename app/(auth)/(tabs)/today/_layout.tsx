@@ -3,6 +3,6 @@ import React from 'react'
 
 export default function todayLayout() {
   return (
-    <Stack/>
+    <Stack screenOptions={{headerShadowVisible:false}}/>
   )
 }
