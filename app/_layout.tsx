@@ -18,8 +18,8 @@ export function InitialLayout() {
   useEffect(() => {
     if (!isLoaded || !isMounted) return;
 
-    console.log(pathname);
-    console.log(segments);
+    // console.log(pathname);
+    // console.log(segments);
 
     const inAuthGroup = segments[0] === '(auth)';
     console.log(inAuthGroup);

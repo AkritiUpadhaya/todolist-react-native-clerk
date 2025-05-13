@@ -1,10 +1,10 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-export default function home() {
+export default function Fab() {
   return (
     <View>
-      <Text>home</Text>
+      <Text>Fab</Text>
     </View>
   )
 }

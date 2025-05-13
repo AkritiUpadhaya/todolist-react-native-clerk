@@ -7,7 +7,7 @@ export default function tablayout() {
       <Tabs.Screen
         name="today"
         options={{
-          title: "Today",
+          headerShown:false,
           tabBarIcon: ({ focused }) => (
             <Ionicons name="home" size={24} color={focused ? "blue" : "gray"} />
           ),
@@ -16,7 +16,7 @@ export default function tablayout() {
       <Tabs.Screen
         name="search"
         options={{
-          title: "Search",
+          headerShown:false,
           tabBarIcon: ({ focused }) => (
             <Ionicons name="search" size={24} color={focused ? "blue" : "gray"} />
           ),
@@ -25,7 +25,7 @@ export default function tablayout() {
       <Tabs.Screen
         name="browse"
         options={{
-          title: "Browse",
+          headerShown:false,
           tabBarIcon: ({ focused }) => (
             <Ionicons name="compass" size={24} color={focused ? "blue" : "gray"} />
           ),
@@ -34,7 +34,7 @@ export default function tablayout() {
       <Tabs.Screen
         name="upcoming"
         options={{
-          title: "Upcoming",
+            headerShown:false,
           tabBarIcon: ({ focused }) => (
             <Ionicons name="calendar" size={24} color={focused ? "blue" : "gray"} />
           ),
