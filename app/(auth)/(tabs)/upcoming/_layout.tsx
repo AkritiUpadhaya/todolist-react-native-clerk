@@ -10,7 +10,7 @@ export default function upcomingLayout() {
         title:'Upcoming', 
         headerRight:({})=>{
           return(
-            <MoreButton/>
+            <MoreButton pageName="Upcoming"/>
           )
         }
     }}/>

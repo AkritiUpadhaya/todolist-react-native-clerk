@@ -1,10 +1,16 @@
+import Fab from '@/components/Fab'
 import React from 'react'
-import { Text, View } from 'react-native'
+import { ScrollView, Text, View } from 'react-native'
 
 export default function index() {
   return (
-    <View>
-      <Text>index</Text>
-    </View>
+    <>
+   <ScrollView contentInsetAdjustmentBehavior='automatic'>
+         <View>
+         <Text>home</Text>
+       </View>
+       </ScrollView>
+       <Fab/>
+       </>
   )
 }

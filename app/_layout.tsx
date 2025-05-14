@@ -2,6 +2,8 @@ import { ClerkLoaded, ClerkProvider, useAuth } from '@clerk/clerk-expo';
 import { tokenCache } from '@clerk/clerk-expo/token-cache';
 import { Stack, router, usePathname, useSegments } from 'expo-router';
 import React, { useEffect, useState } from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { Toaster } from 'sonner-native';
 const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
 export function InitialLayout() {
@@ -41,11 +43,14 @@ const Rootlayout = () => {
       tokenCache={tokenCache}
     >
       <ClerkLoaded>
+        <GestureHandlerRootView>
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="(auth)" options={{ headerShown: false }} />
         </Stack>
+        <Toaster />
         <InitialLayout />
+        </GestureHandlerRootView>
       </ClerkLoaded>
     </ClerkProvider>
   );
