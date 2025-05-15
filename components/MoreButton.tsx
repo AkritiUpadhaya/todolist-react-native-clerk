@@ -8,6 +8,7 @@ type MoreButtonProps = {
 
 const MoreButton = ({pageName}:MoreButtonProps) => {
   return (
+    <>
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>
         <TouchableOpacity>
@@ -27,7 +28,7 @@ const MoreButton = ({pageName}:MoreButtonProps) => {
        </DropdownMenu.Item>
       </DropdownMenu.Content>
     </DropdownMenu.Root>
-  )
+    </>  )
 }
 
 export default MoreButton
